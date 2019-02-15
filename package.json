@@ -1,0 +1,18 @@
+{
+  "name": "babel-core-modules-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/code-frame": "^7.0.0",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  },
+  "scripts": {
+    "prestart": "rm -rf dist",
+    "start": "babel . -d dist --ignore node_modules ",
+    "app": "babel-node --presets=@babel/env app.js"
+  }
+}
